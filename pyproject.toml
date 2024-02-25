@@ -1,0 +1,13 @@
+[project]
+name = "pyreflect"
+version = "0.1.0"
+authors = [
+  { name="Xpo Development", email="dev@xpo.dev" },
+]
+description = "OOP approach for python reflection"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
