@@ -26,6 +26,9 @@ class ParametersCategory:
     def add(self, name: str, parameter_type: Type, default: object = NO_VALUE) -> None:
         self._parameters.append(Parameter(name, parameter_type, self.kind, default))
 
+    def add_at(self, index: int, name: str, parameter_type: Type, default: object = NO_VALUE) -> None:
+        self._parameters.insert(index, Parameter(name, parameter_type, self.kind, default))
+
     def append(self, parameter: Parameter) -> None:
         if parameter.kind != self.kind:
             raise ValueError("Parameter kind does not match category kind")
